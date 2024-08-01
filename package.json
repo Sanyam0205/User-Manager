@@ -1,0 +1,23 @@
+{
+  "name": "mern-stack-boilerplate",
+  "version": "1.0.0",
+  "description": "![Boilerplate](./boilerplate.gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@react-pdf/renderer": "^3.4.4",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.3",
+    "pm2": "^5.4.2",
+    "react-router-dom": "^6.23.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
