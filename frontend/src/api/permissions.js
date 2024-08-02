@@ -1,4 +1,5 @@
 import dynamicAPI from './dynamicAPI'
+
 import { useQuery, useMutation, useQueryClient } from 'react-query'
 
 const url = '/api/auth/permissions'

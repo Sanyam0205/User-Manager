@@ -13,6 +13,7 @@ import UserRoles from './screens/admin/auth/UserRoles'
 import UserProfiles from './screens/admin/auth/UserProfiles'
 import Users from './screens/admin/auth/Users'
 import { Layout } from './components'
+import PForm from './screens/auth/form.js'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
 
           <Route element={<RequireAuth />}>
             <Route path='/' element={<Home />} />
+            <Route path='/Form' element={<PForm />} />
             <Route path='/account/profile' element={<Profile />} />
             <Route
               path='/admin/auth/client-permissions'

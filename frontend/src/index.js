@@ -7,7 +7,7 @@ import './index.css'
 import App from './App'
 
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+// import { ReactQueryDevtools } from 'react-query/devtools'
 import { AuthProvider } from './context/AuthProvider'
 
 const queryClient = new QueryClient()
@@ -23,7 +23,7 @@ root.render(
           </Routes>
         </AuthProvider>
       </BrowserRouter>
-      <ReactQueryDevtools />
+      {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   </React.StrictMode>
 )

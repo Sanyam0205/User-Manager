@@ -141,11 +141,11 @@ export const deleteRole = async (req, res) => {
 
     if (userRolesObject.length > 0) {
       userRolesObject.forEach(async (userRole) => {
-        await userRole.remove()
+        await userRole.deleteOne()
       })
     }
 
-    await object.remove()
+    await object.deleteOne()
     res.status(200).json({ message: `${schemaNameString} removed` })
   } catch (error) {
     res.status(500).json({ error: error.message })

@@ -119,9 +119,9 @@ export const deleteUser = async (req, res) => {
     })
 
     const userRole = await UserRole.findOne({ user: object._id })
-    userRole && (await userRole.remove())
+    userRole && (await userRole.deleteOne())
 
-    await object.remove()
+    await object.deleteOne()
     res.status(200).json({ message: `${schemaNameString} removed` })
   } catch (error) {
     res.status(500).json({ error: error.message })

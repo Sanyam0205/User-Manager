@@ -4,10 +4,15 @@
   "description": "![Boilerplate](./boilerplate.gif)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm run server",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
   },
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-pdf/renderer": "^3.4.4",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",

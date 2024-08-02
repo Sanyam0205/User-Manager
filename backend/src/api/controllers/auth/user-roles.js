@@ -139,7 +139,7 @@ export const deleteUserRole = async (req, res) => {
     if (!object)
       return res.status(400).json({ error: `${schemaNameString} not found` })
 
-    await object.remove()
+    await object.deleteOne()
     res.status(200).json({ message: `${schemaNameString} removed` })
   } catch (error) {
     res.status(500).json({ error: error.message })
