@@ -1,6 +1,4 @@
-# Complete MERN-Stack Boilerplate
 
-![Boilerplate](./boilerplate.gif)
 
 ## Features
 
@@ -63,9 +61,3 @@ Your can find the default `super admin` and `password` in the below directory
 /backend/src/config/data.js
 ```
 
-### Default super admin authentication is:
-
-- Email: _info@ahmedibra.com_
-- Password: _123456_
-
-**_Free NEXT.js Boilerplate, Hell Yeah!_**
